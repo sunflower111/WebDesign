@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+javascript exercise one
+</title>
+<script type="text/javascript">
+function welcome()
+{
+  //Asks the person's name
+  var name = prompt("What is your name?", "Enter name here");
+  // Welcomes the person
+  alert("Welcome to my webpage, "+name+"!")
+  dayName=new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+  monName= new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+  now=new Date();
+}
+function saySomething(message)
+{alert(message)}
+  </script>
+<center><img src="karoo_rose.jpg">
+<h1>Lapidaria margaretae</h1></center>
+</head>
+<body bgcolor=#CCFFFF>
+  <center><p>Welcome, The Date And Time Is:
+    <script type="text/javascript">
+    document.write("<h1>Today is </h1>" + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate());
+  </script>
+<br />
+<br />
+    <script type="text/javascript">
+    document.write(Date());
+    </script>
+  </p>
+    <input type="button" value="Enter Name Here" onclick="welcome();">
+    <br />
+    <br />
+  <img src="smol.png" height="300">
+  <img src="flower.jpg" height="300">
+  <img src="bud.jpg" height="300">
+
+<p>
+  <b>Lapidaria margaretae</b>, also known as Karoo Rose, is a genus of dwarf succulent plants. It has a geometric shape and yellow flowers, which bloom in autumn and early winter.
+</p>
+<form action="#">
+<input type="button" value="CLick Here" onclick="saySomething('You are wonderful')" />
+<input type="button" value="And Here" onclick="saySomething('Take care of yourself')" /> </center>
+
+</body>
+</html>

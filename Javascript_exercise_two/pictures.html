@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="mystylesheet.css">
+<title>
+javascript exercise one
+</title>
+<script type="text/javascript">
+function welcome()
+{
+  //Asks the person's name
+  var name = prompt("What is your name?", "Enter name here");
+  // Welcomes the person
+  alert("Welcome to my webpage, "+name+"!")
+  dayName=new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+  monName= new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+  now=new Date();
+}
+function saySomething(message)
+{alert(message)}
+  </script>
+  <script type="text/javascript">
+  adImages=new Array("Succulent1.jpg",  "Succulent2.jpg", "Succulent3.jpg")
+thisAd=0
+imgCt = adImages.length
+function rotate()
+{
+  if(document.images)
+  {
+    thisAd++
+    if(thisAd==imgCt)
+    {
+      thisAd=0
+    }
+    document.adBanner.src=adImages[thisAd]
+    setTimeout("rotate()", 3000)
+  }
+}
+</script>
+<script type="test/javascript">
+myPix = new Array("spiky.jpg",
+"burros-tail.jpg", "bud.jpg") thisPic = 0
+imgCt2 = myPix.length – 1
+function processPrevious() {
+if (document.images && thisPic > 0) {
+thisPic-- //no spaces this is minus minus
+document.myPicture.src=myPix[thisPic]
+} }
+
+function processNext() {
+if (document.images && thisPic < imgCt2)
+{
+   thisPic++
+  document.myPicture.src=myPix[thisPic]
+} }
+
+
+</script>
+
+<script type="text/javascript">
+
+if(document.images) {
+arrowRed = new Image
+arrowBlue = new Image
+arrowRed.src = "hello1.jpg"
+arrowBlue.src = "hello2.jpg"
+}
+else {
+arrowRed = ""
+arrowBlue = ""
+document.arrow = ""
+}
+</script>
+
+</head>
+<body bgcolor=#CCFFFF onload="rotate()">
+  <center>
+  <img src="Succulent1.jpg" width="" height="200" name="adBanner" alt="Ad Banner" />
+  </center>
+
+
+  <div>
+    <table align="center" border=#000000 bgcolor=#66ffff>
+      <tr>
+      <td><a href="index.html"><h1 color="#FFFFFF">Home</h1></a></td>
+    <td><a href="pictures.html"><h1>More Succulents</h1></a></td>
+  </tr>
+  </table>
+  </div>
+
+  <center><p>Welcome, The Date And Time Is:
+    <script type="text/javascript">
+    document.write("<h1>Today is </h1>" + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate());
+  </script>
+  <br />
+  <br />
+  <script type="text/javascript">
+  document.write(Date());
+  </script>
+
+<p align="center"><img src="spiky.jpg" name="myPicture"  height="300" alt="Slideshow" /></p>
+
+  <h1 align="center"><a href="javascript: processPrevious()">&lt;&lt; Previous</a>&nbsp;&nbsp;<a href="javascript:processNext()">Next &gt;&gt;</a></h1>
+
+
+
+<center><h1>Lapidaria margaretae</h1></center>
+  <center>
+  </p>
+    <br />
+  <img src="smol.png" height="300">
+  <img src="flower.jpg" height="300">
+  <img src="bud.jpg" height="300">
+
+<p>
+  There are a wide veriety of succulents. These plants are easy to take care of because they need little water.
+</p>
+<form action="#">
+<input type="button" value="Click Here" onclick="saySomething('You are wonderful')" />
+<input type="button" value="And Here" onclick="saySomething('Take care of yourself')" /> </center>
+
+<center>
+<img src="hello1.jpg" alt="blue arrow"
+name="arrow"
+onmouseover="document.arrow.src=arrowRed.src"
+onmouseout="document.arrow.src=arrowBlue.src">
+</center>
+
+</body>
+</html>
