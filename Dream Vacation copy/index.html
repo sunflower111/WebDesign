@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Style1.css">
+<title>Dream Vacation</title>
+
+<script type="text/javascript">
+function welcome()
+{
+  //Asks the person's name
+  var name = prompt("In which continent is Greece located?", "Enter answer here");
+  // Welcomes the person
+  alert("If you said Europe, you are right!")
+}
+
+function saySomething(message)
+{alert(message)}
+</script>
+
+<script type="text/javascript">
+
+if(document.images) {
+arrowRed = new Image
+arrowBlue = new Image
+arrowRed.src = "Greece1.png"
+arrowBlue.src = "Greece2.png"
+}
+else {
+arrowRed = ""
+arrowBlue = ""
+document.arrow = ""
+}
+
+</script>
+
+<script type="test/javascript">
+myPix = new Array("Greece.png", "Spanakopita.jpg", "Souvlaki.jpg", "Loukoumades.jpg", "Acropolis.jpg", "Mount-Olympus.jpg", "Melissani-Cave.jpg") thisPic = 0
+imgCt2 = myPix.length – 1
+function processPrevious() {
+if (document.images && thisPic > 0) {
+thisPic-- //no spaces this is minus minus
+document.myPicture.src=myPix[thisPic]
+} }
+
+function processNext() {
+if (document.images && thisPic < imgCt2)
+{
+ thisPic++
+document.myPicture.src=myPix[thisPic]
+} }
+
+</script>
+
+<script type="text/javascript">
+adImages=new Array("Dream2.png", "Dream1.png")
+thisAd=0
+imgCt = adImages.length
+function rotate()
+{
+if(document.images)
+{
+  thisAd++
+  if(thisAd==imgCt)
+  {
+    thisAd=0
+  }
+  document.adBanner.src=adImages[thisAd]
+  setTimeout("rotate()", 3000)
+}
+}
+</script>
+
+</head>
+<body>
+
+  <div class="navigation sticky">
+    <table align="center">
+      <tr><td><img src="Dream2.png"  width="400" name="adBanner" alt="Ad Banner"></td>
+      <td class="grow"><a href="index.html"><img src="Home.png"  width="200" class="icons"></a></td>
+    <td class="grow"><a href="places.html"><img src="Places.png"  width="200" class="icons"></a></td>
+    <td class="grow"><a href="food.html"><img src="Food.png"  width="200" class="icons"></a></td></tr>
+  </table>
+  </div>
+
+  <p>Welcome, The Date And Time Is:
+    <script type="text/javascript">
+    <h1> document.write("Today is "+
+  dayName[now.getDay()]+", "+monName[now.getMonth()]+""+now.getDate())</h1>
+  </script>
+<br />
+<br />
+    <script type="text/javascript">
+    document.write(Date());
+    </script>
+  </p>
+
+<div class="greece">
+  <div class="caption">
+    <span><img src="Greece1.png" alt="blue arrow"
+    name="arrow" height="200"
+    onmouseover="document.arrow.src=arrowRed.src"
+    onmouseout="document.arrow.src=arrowBlue.src"></span>
+  </div>
+</div>
+
+
+
+<div class="textSection">
+    <h2>Greece</h2>
+<p>Greece is a great travel destination for your vacation. It has places to fit everyone. It has enchanting mountains, beaches, and historical architecture. It also has it's own cultural food to try. </p>
+
+<input type="button" value="Fun Fact" onclick="welcome();">
+
+<input type="button" value="Fun Fact #2" onclick="saySomething('Marathons came from Ancient Greek times.')" />
+
+
+</div>
+
+<div class="textSection">
+
+<p align="center"><img src="Greece.png" name="myPicture"  height="300" alt="Slideshow" /></p>
+
+  <h1 align="center"><a href="javascript: processPrevious()">&lt;&lt; Previous</a>&nbsp;&nbsp;<a href="javascript:processNext()">Next &gt;&gt;</a></h1>
+
+</div>
+
+<!--I completely retyped the Slideshow but it still doesn't work-->
+
+</body>
+</html>

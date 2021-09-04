@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Style1.css">
+<title>Dream Destinations</title>
+
+<script type="text/javascript">
+
+function saySomething(message)
+{alert(message)}
+
+</script>
+
+
+<script type="text/javascript">
+
+if(document.images) {
+arrowRed = new Image
+arrowBlue = new Image
+arrowRed.src = "Places1.png"
+arrowBlue.src = "Places2.png"
+}
+else {
+arrowRed = ""
+arrowBlue = ""
+document.arrow = ""
+}
+
+</script>
+
+<script type="test/javascript">
+myPix = new Array("Acropolis.jpg", "Mount-Olympus.jpg", "Melissani-Cave.jpg") thisPic = 0
+imgCt2 = myPix.length – 1
+function processPrevious() {
+if (document.images && thisPic > 0) {
+thisPic-- //no spaces this is minus minus
+document.myPicture.src=myPix[thisPic]
+} }
+
+function processNext() {
+if (document.images && thisPic < imgCt2)
+{
+ thisPic++
+document.myPicture.src=myPix[thisPic]
+} }
+
+</script>
+
+<script type="text/javascript">
+adImages=new Array("Dream2.png", "Dream1.png")
+thisAd=0
+imgCt = adImages.length
+function rotate()
+{
+if(document.images)
+{
+  thisAd++
+  if(thisAd==imgCt)
+  {
+    thisAd=0
+  }
+  document.adBanner.src=adImages[thisAd]
+  setTimeout("rotate()", 3000)
+}
+}
+</script>
+
+</head>
+<body>
+
+  <div class="navigation sticky">
+    <table align="center">
+      <tr><td><img src="Dream2.png"  width="400" name="adBanner" alt="Ad Banner"></td>
+      <td class="grow"><a href="index.html"><img src="Home.png"  width="150" class="icons"></a></td>
+    <td class="grow"><a href="places.html"><img src="Places.png"  width="150" class="icons"></a></td>
+    <td class="grow"><a href="food.html"><img src="Food.png"  width="150" class="icons"></a></td></tr>
+  </table>
+  </div>
+
+<div class="textSection">
+  </div>
+
+<center> <div class="textSection">
+  <img src="Places1.png" alt="blue arrow"
+  name="arrow" height="150" align="center"
+  onmouseover="document.arrow.src=arrowRed.src"
+  onmouseout="document.arrow.src=arrowBlue.src">
+<br />
+<br />
+  <script type="text/javascript">
+  document.write(Date());
+  </script>
+<br />
+<br />
+<input type="button" value="Fun Fact #1" onclick="saySomething('The Greek believed that the gods lived on Mount Olympus.')" />
+<input type="button" value="Fun Fact #2" onclick="saySomething('Greece is one of the sunniest places in the world.')" />
+
+</div> </center>
+
+<div class="acropolis">
+</div>
+
+<div class="textSection">
+    <h2>The Acropolis</h2>
+<p>Located in Athens, the capital city of Greece, you will find the Acropolis. It's home to many beautiful examples of architecture including Doric columns, spectacular temples, and the Parthenon.  </p>
+</div>
+
+<div class="mt">
+</div>
+
+<div class="textSection">
+    <h2>Mount Olympus</h2>
+<p>If you enjoy hiking or mountain climbing, Mount Olympus is a great travel destination for you! If you are a fan of Greek Mythology, this is a great place to visit too! In Greek Mythology, it is the home of the gods. </p>
+</div>
+
+<div class="cave">
+</div>
+
+<div class="textSection">
+    <h2>Melissani Cave</h2>
+<p>Come to Karavomilo to visit the Melissani Cave! Inside this beautiful 4 kilimeter long cave is the Melissani Lake. It's an underground body of water that was named after the Nymph Melissani from ancient times.</p>
+<p>You enter the cave through a tunnel and travel across it on a boat. </p>
+</div>
+
+<div class="textSection">
+
+<p align="center"><img src="Acropolis.jpg" name="myPicture"  height="300" alt="Slideshow" /></p>
+
+  <h1 align="center"><a href="javascript: processPrevious()">&lt;&lt; Previous</a>&nbsp;&nbsp;<a href="javascript:processNext()">Next &gt;&gt;</a></h1>
+
+</div>
+
+<!--I completely retyped the Slideshow but it still doesn't work-->
+
+</body>
+</html>

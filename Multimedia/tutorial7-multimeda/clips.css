@@ -1,0 +1,25 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 7
+   Tutorial Case
+
+   Jumbo Popcorn Style Sheet
+   Author: Annabelle Sun
+   Date:   1/14/20
+
+   Filename:         clips.css
+   Supporting Files:
+
+*/
+
+/*
+Multimedia control files
+*/
+
+audio, video {
+  background-color: white;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  width:95%;
+}

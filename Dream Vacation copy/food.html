@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Style1.css">
+<title>Greek Cuisine</title>
+
+<script type="text/javascript">
+
+function saySomething(message)
+{alert(message)}
+
+</script>
+
+<script type="text/javascript">
+
+if(document.images) {
+arrowRed = new Image
+arrowBlue = new Image
+arrowRed.src = "Food1.png"
+arrowBlue.src = "Food2.png"
+}
+else {
+arrowRed = ""
+arrowBlue = ""
+document.arrow = ""
+}
+
+</script>
+
+<script type="test/javascript">
+myPix = new Array("Spanakopita.jpg", "Souvlaki.jpg", "Loukoumades.jpg") thisPic = 0
+imgCt2 = myPix.length – 1
+function processPrevious() {
+if (document.images && thisPic > 0) {
+thisPic-- //no spaces this is minus minus
+document.myPicture.src=myPix[thisPic]
+} }
+
+function processNext() {
+if (document.images && thisPic < imgCt2)
+{
+ thisPic++
+document.myPicture.src=myPix[thisPic]
+} }
+
+</script>
+
+<script type="text/javascript">
+adImages=new Array("Dream2.png", "Dream1.png")
+thisAd=0
+imgCt = adImages.length
+function rotate()
+{
+if(document.images)
+{
+  thisAd++
+  if(thisAd==imgCt)
+  {
+    thisAd=0
+  }
+  document.adBanner.src=adImages[thisAd]
+  setTimeout("rotate()", 3000)
+}
+}
+</script>
+
+</head>
+<body>
+
+<div class="navigation sticky">
+  <table align="center">
+    <tr><td><img src="Dream2.png"  width="400" name="adBanner" alt="Ad Banner"></td>
+    <td class="grow"><a href="index.html"><img src="Home.png"  width="150" class="icons"></a></td>
+  <td class="grow"><a href="places.html"><img src="Places.png"  width="150" class="icons"></a></td>
+  <td class="grow"><a href="food.html"><img src="Food.png"  width="150" class="icons"></a></td></tr>
+</table>
+</div>
+
+
+
+<div class="textSection">
+
+</div>
+
+<center><div class="textSection">
+  <img src="Places1.png" alt="blue arrow"
+  name="arrow" height="150"
+  onmouseover="document.arrow.src=arrowRed.src"
+  onmouseout="document.arrow.src=arrowBlue.src">
+  <br />
+  <br />
+    <script type="text/javascript">
+    document.write(Date());
+    </script>
+  <br />
+  <br />
+  <input type="button" value="Fun Fact #1" onclick="saySomething('Lunch is usually the biggest meal in Greece.')" />
+  <input type="button" value="Fun Fact #2" onclick="saySomething('Ancient Greeks ate a diet that was mostly vegetarian.')" />
+</div></center>
+
+<div class="Spanakopita">
+</div>
+
+<div class="textSection">
+    <h2>Spanakopita</h2>
+<p>These wonderful pastries are typically filled with feta cheese, fresh spinach, sweet onions and a bit of seasoning. They often come in different sizes, such as squares or triangles.</p>
+</div>
+
+<div class="Souvlaki">
+</div>
+
+<div class="textSection">
+    <h2>Souvlaki</h2>
+<p>Souvlakis are filling skewers of freshly grilled meat. Often made with beef, lamb chicken or fish. It tastes best with a side salad or bread.  </p>
+</div>
+
+<div class="Loukoumades">
+</div>
+
+<div class="textSection">
+    <h2>Loukoumades</h2>
+<p>These little pastries are just like doughnut holes. They taste great with honey and almonds, and are best served fresh. </p>
+</div>
+
+<div class="textSection">
+
+<p align="center"><img src="Spanakopita.jpg" name="myPicture"  height="300" alt="Slideshow" /></p>
+
+  <h1 align="center"><a href="javascript: processPrevious()">&lt;&lt; Previous</a>&nbsp;&nbsp;<a href="javascript:processNext()">Next &gt;&gt;</a></h1>
+
+</div>
+
+<!--I completely retyped the Slideshow but it still doesn't work-->
+
+</body>
+</html>
